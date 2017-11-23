@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<h1>The Movies Page</h1>
+
+<!--using forEach-->
+
+<p>Using forEach loop</p>
+<% data["Search"].forEach(function(movie){ %>
+    Movie: <%= movie.Title %>
+    Year: <%= movie.Year %>
+    Poster: <img src=<%= movie.Poster %> width="100">
+    <hr>
+<% }) %>
+
+<% include partials/footer %>
